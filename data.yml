@@ -1,8 +1,6 @@
-albumName: FAWM 20XX
+albumName: Prompt Injection
 songs:
-  - title: Song Title 01
-    mp3Filename: song-title-01
-    notes: "Song notes 01"
-  - title: Song Title 02
-    mp3Filename: song-title-02
-    notes: "Song notes 02"
+  - title: Accidents Will Happen (Mix It With Orange Squash)
+    mp3Filename: ab_accidents_will_happen
+    notes: |
+      This is the true story of Britain's worst mass poisoning, when twenty thousand people had aluminium sulphate dumped into their water supply. Those people included the mother of one of my closest friends. None of them got justice. See https://en.wikipedia.org/wiki/Camelford_water_pollution_incident
