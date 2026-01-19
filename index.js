@@ -13,6 +13,23 @@ function readYAMLFile(filePath) {
 
 // Function to create the HTML for a single song
 function createSongHTML(song, index) {
+  // Remove leading indentation from each line while preserving blank lines
+  let formattedNotes = "";
+  if (song.notes) {
+    const lines = song.notes.split("\n");
+    // Find minimum indentation (excluding blank lines)
+    const minIndent = lines
+      .filter((line) => line.trim().length > 0)
+      .map((line) => line.match(/^(\s*)/)[1].length)
+      .reduce((min, indent) => Math.min(min, indent), Infinity);
+
+    // Remove the common indentation from all lines
+    formattedNotes = lines
+      .map((line) => line.slice(minIndent))
+      .join("\n")
+      .trim();
+  }
+
   return `
     <div class="song-item mt-4">
         <h3>${song.title}</h3>
@@ -31,9 +48,7 @@ function createSongHTML(song, index) {
         </div>
 
         <div class="collapse mt-3" id="notes${index}">
-            <div class="card card-body">
-                ${song.notes}
-            </div>
+            <div class="card card-body" style="white-space: pre-wrap;">${formattedNotes}</div>
         </div>
 
         <div class="collapse mt-3" id="lyrics${index}">
