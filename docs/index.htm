@@ -33,13 +33,14 @@
 
         <div class="collapse mt-3" id="notes0">
             <div class="card card-body">
-                This is the true story of Britain's worst mass poisoning, when twenty thousand people had aluminium sulphate dumped into their water supply. Those people included the mother of one of my closest friends. None of them got justice. See https://en.wikipedia.org/wiki/Camelford_water_pollution_incident
+                This is the true story of Britain's worst mass poisoning, when twenty thousand people had aluminium sulphate dumped into their water supply.
+Those people included the mother of one of my closest friends. None of them got justice. See https://en.wikipedia.org/wiki/Camelford_water_pollution_incident
 
             </div>
         </div>
 
         <div class="collapse mt-3" id="lyrics0">
-            <div class="card card-body" id="ab_accidents_will_happen-lyrics">
+            <div class="card card-body" style="white-space: pre-wrap;" id="ab_accidents_will_happen-lyrics">
                 <!-- Lyrics will be loaded here -->
             </div>
         </div>
@@ -77,7 +78,8 @@
                 .then(response => response.text())
                 .then(data => {
                     // Replace newline characters with <br> tags
-                    const formattedLyrics = data.replace(/\n/g, '<br>');
+                    // Replace blank lines (two consecutive newlines) with two <br> tags to preserve spacing
+                    const formattedLyrics = data.replace(/\n\n/g, '<br><br>').replace(/\n/g, '<br>');
                     document.getElementById(`${songTitle}-lyrics`).innerHTML = formattedLyrics;
                 })
                 .catch(error => {

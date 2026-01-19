@@ -37,7 +37,7 @@ function createSongHTML(song, index) {
         </div>
 
         <div class="collapse mt-3" id="lyrics${index}">
-            <div class="card card-body" id="${song.mp3Filename}-lyrics">
+            <div class="card card-body" style="white-space: pre-wrap;" id="${song.mp3Filename}-lyrics">
                 <!-- Lyrics will be loaded here -->
             </div>
         </div>
