@@ -1,4 +1,4 @@
-albumName: Prompt Injection
+albumName: A Prompt Injection
 songs:
   - title: Accidents Will Happen (Mix It With Orange Squash)
     mp3Filename: ab_accidents_will_happen
@@ -6,3 +6,7 @@ songs:
       This is the true story of Britain's worst mass poisoning, when twenty thousand people had aluminium sulphate dumped into their water supply.
 
       Those people included the mother of one of my closest friends. None of them got justice. See https://en.wikipedia.org/wiki/Camelford_water_pollution_incident
+  - title: Captain Un-America
+    mp3Filename: ab_captain_unamerica
+    notes: |
+      Don't believe in heroes.
