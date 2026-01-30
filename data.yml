@@ -10,6 +10,18 @@ songs:
     mp3Filename: ab_captain_unamerica
     notes: |
       Don't believe in heroes.
+  - title: I'm Not A Robot
+    mp3Filename: ab_im_not_a_robot
+    notes: |
+      After being repeatedly questioned on this topic, here are my musings on the possibility.
+  - title: Take the Noise Away
+    mp3Filename: ab_take_the_noise_away
+    notes: |
+      On one hand they bombard us with ads for junk food, on the other they sell us a solution to keep out the noise. The perfect pincer movement.
+  - title: Top of the Slops
+    mp3Filename: ab_top_of_the_slops
+    notes: |
+      Have a wild guess :)
   - title: Drill Baby Drill
     mp3Filename: ab-drill-baby-drill
     notes: |
@@ -26,11 +38,3 @@ songs:
     mp3Filename: ab-think-of-the-children
     notes: |
       Personal rights versus protecting the young. No easy answers, but we need to tread thoughtfully and being thoughtful isn't something we often see.
-  - title: Take the Noise Away
-    mp3Filename: ab_take_the_noise_away
-    notes: |
-      On one hand they bombard us with ads for junk food, on the other they sell us a solution to keep out the noise. The perfect pincer movement.
-  - title: Top of the Slops
-    mp3Filename: ab_top_of_the_slops
-    notes: |
-      Have a wild guess :)
